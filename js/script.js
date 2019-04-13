@@ -57,7 +57,7 @@ var quotes = [
 	{
 		quote: "Never fall in love with an idea. They’re whores. If the one you’re with isn’t doing the job, there’s always, always, always another.",
 		source: "Chip Kidd",
-		citation: "v",
+		citation: "99designs.nl",
 		year: 2013
 	},
 	{
