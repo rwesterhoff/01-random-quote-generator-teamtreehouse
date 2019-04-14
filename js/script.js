@@ -1,7 +1,7 @@
 /******************************************
-Treehouse FSJS Techdegree:
-project 1 - A Random Quote Generator
-******************************************/
+ Treehouse FSJS Techdegree:
+ project 1 - A Random Quote Generator
+ ******************************************/
 
 const quotes = [
 	{
@@ -102,7 +102,7 @@ function getRandomRGB() {
 
 	colorRGB = 'rgb(' + redValue + ', ' + greenValue + ', ' + blueValue + ')';
 
-	return colorRGB ;
+	return colorRGB;
 }
 
 /*
@@ -110,7 +110,7 @@ function getRandomRGB() {
 */
 
 function setBackgroundColor(value) {
- document.body.style.backgroundColor = value;
+	document.body.style.backgroundColor = value;
 }
 
 /*
@@ -121,7 +121,7 @@ function printQuote() {
 	let quote = getRandomQuote(quotes),
 		html = "",
 		quoteBox = document.getElementById('quote-box'),
-		backgroundColor = getRandomRGB();
+		color = getRandomRGB();
 
 	html += '<p class="quote">' + quote.quote + '</p>';
 	html += '<p class="source">' + quote.source;
@@ -142,7 +142,7 @@ function printQuote() {
 	html += '</p>';
 
 	quoteBox.innerHTML = html;
-	setBackgroundColor( backgroundColor );
+	setBackgroundColor(color);
 }
 
 
@@ -153,4 +153,4 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 * */
 
 printQuote();
-setInterval( printQuote, 20000 );
+setInterval(printQuote, 20000);
